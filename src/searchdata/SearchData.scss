@@ -1,0 +1,23 @@
+.search-container{
+    margin-top: 5px;
+    max-width: 90%;
+    display: inline-flex;
+}
+.btn-search{
+    margin-left: 10px;
+    height: 30px;
+    background-color: #4CAF50;
+    border: thin;
+}
+.btn-clear{
+    margin-left: 10px;
+    height: 30px;
+    background-color: lightgray;
+    border: thin;
+}
+.input-text-box{
+    height: 25px;
+}
+.input-text-box:focus{
+    outline:thin;
+}

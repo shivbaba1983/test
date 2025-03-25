@@ -1,0 +1,59 @@
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left-section {
+  margin-top: 20px;
+  flex: 1;
+  min-width: 300px;
+  /* Prevents elements from shrinking too much */
+}
+
+.right-section {
+  margin-top: 20px;
+  flex: 1;
+  min-width: 300px;
+  /* Prevents elements from shrinking too much */
+}
+
+.application-level {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.image-dimentions {
+  height: 50%;
+  width: 50%;
+}
+
+.attraction-section {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.section-1{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.facility-section {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.contact-info-section {
+  //justify-items: left;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.location-info-section {
+  justify-items: left;
+  margin-top: 100px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
