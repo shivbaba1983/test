@@ -1,0 +1,97 @@
+.hero-slider {
+  width: 95%;
+  // height: 490px;
+  position: relative;
+}
+
+.swiper-container {
+  width: 90%;
+  height: 60%;
+
+  .swiper-wrapper {
+    margin-left: 5%;
+  }
+}
+
+.hero-slide {
+  margin-top: 1%;
+  width: 95%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 50%;
+  height: 50%;
+  background: transparent; //rgba(0, 0, 0, 0.5); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.swiper-button-prev {
+  margin-left: 8%;
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-cta {
+  background: #ff5722;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.hero-cta:hover {
+  background: #e64a19;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .swiper-button-prev {
+    margin-left: 0%;
+  }
+
+  .hero-slider {
+    width: 100%;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 60%;
+
+    .swiper-wrapper {
+      margin-left: 1%;
+    }
+  }
+}

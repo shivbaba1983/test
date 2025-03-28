@@ -1,7 +1,9 @@
 .main-container {
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
-  gap: 20px;
+  //gap: 20px;
+  justify-content: center;
+  width: 60%;
 }
 
 .left-section {
@@ -10,7 +12,9 @@
   min-width: 300px;
   /* Prevents elements from shrinking too much */
 }
-
+.search-main-section{
+  margin-top: 15px;
+}
 .right-section {
   margin-top: 20px;
   flex: 1;
