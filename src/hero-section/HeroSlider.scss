@@ -36,7 +36,7 @@
 }
 
 .swiper-button-prev {
-  margin-left: 8%;
+  margin-left: 4%;
 }
 
 .hero-content {
@@ -57,7 +57,7 @@
 }
 
 .hero-cta {
-  background: #ff5722;
+  background: green;
   color: white;
   padding: 14px 28px;
   text-decoration: none;
@@ -68,15 +68,17 @@
 }
 
 .hero-cta:hover {
-  background: #e64a19;
+  background: #af0061;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
 
-  color: red;
+  color: lime;
 }
-
+.search-main-section{
+  margin-top: 15px;
+}
 @media only screen and (max-width: 600px) {
   .swiper-button-prev {
     margin-left: 0%;

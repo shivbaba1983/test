@@ -2,13 +2,25 @@ import { useEffect, useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import './ExpandCollapse.scss'
 import RowHeaders from './../data/RowHeaders.json';
-const ExpandCollapse = ({ leftright, data }) => {
+const ExpandCollapse = ({ leftright, data, selectedId }) => {
     const [tiles, setTiles] = useState(leftright === "L" ? data : data);
     const [rowHeaders, setRowHeaders] = useState(RowHeaders);
     useEffect(() => {
         setTiles(data)
     }, [data]);
 
+    useEffect(() => {
+        setExpandedId(null);
+    }, []);
+
+    useEffect(() => {
+        if (selectedId > 0) {
+            setExpandedId(selectedId);
+        }
+        else {
+            setExpandedId(null);
+        }
+    }, [selectedId]);
 
     const [expandedId, setExpandedId] = useState(null);
 
@@ -31,7 +43,7 @@ const ExpandCollapse = ({ leftright, data }) => {
                     <div onClick={() => toggleItem(item.id)} className={item.yojanaCategory}>
                         {item.marathiTitle} {expandedId === item.id ? '-' : '+'}
                     </div>
-                    
+
                     {expandedId === item.id && (
                         <div key={item.id} className="yojana-description-section">
                             <p><span className="row-header">{rowHeaders.yojanaDescription}:</span>{item.yojanaDescription} </p>

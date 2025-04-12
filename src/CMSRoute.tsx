@@ -6,7 +6,7 @@ import Attraction from "./attraction/attraction";
 
 import MainResponsiveLayout from "./main-responsive-layout/MainResponsiveLayout";
 import './CMSRoute.scss';
-
+import PageNotFound from './components/PageNotFound'
 
 const CMSRoute = () => {
     const Mega_Menu = [
@@ -42,6 +42,7 @@ const CMSRoute = () => {
 
             <Routes>
                 <Route path="*" element={<MainResponsiveLayout />} />
+                {/* <Route path="*" element={<PageNotFound />} /> */}
                 {/* <Route path="/cms/home" element={<Home />} />
                 <Route path="/cms/attraction" element={<Attraction />} />
                 <Route path="/cms/facility" element={<Facility />} /> */}

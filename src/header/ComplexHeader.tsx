@@ -6,7 +6,7 @@ const ComplexHeader =()=>{
     return(<div>
   
         <div className="complex-headline">
-        <h1> <img src={lord} className="lord-image"/> चला बदल घडवूया </h1>
+        <h1> <img src={lord} className="lord-image"/> सरकारी योजनेचा लाभ घेऊन बदल घडवूया </h1>
         </div>
     </div>)
 }

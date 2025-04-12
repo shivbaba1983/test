@@ -39,9 +39,38 @@ loader:"jsx",
     plugins: [
         react(),
         viteStaticCopy({
-            targets: [
+            targets: [                
                 {
-                    src: "./src/assets/Sankul1.jpeg",
+                    src: "./src/assets/kanya_bhagyashreeyou.jpg",
+                    dest: "assets",
+                },
+                {
+                    src: "./src/assets/magel-tyala-shettale.jpg",
+                    dest: "assets",
+                },
+                {
+                    src: "./src/assets/mahatma-phule.jpg",
+                    dest: "assets",
+                },
+                {
+                    src: "./src/assets/mukyamantri-annapurna-yogna.jpg",
+                    dest: "assets",
+                },
+                {
+                    src: "./src/assets/LadkiBhain.jpg",
+                    dest: "assets",
+                },
+                {
+                    src: "./src/assets/lekh-ladki-yojana.jpg",
+                    dest: "assets",
+                },             {
+                    src: "./src/assets/aam-admi-vima-yogna.jpg",
+                    dest: "assets",
+                },             {
+                    src: "./src/assets/saur-krishi-vahini-yojana.jpg",
+                    dest: "assets",
+                },             {
+                    src: "./src/assets/ViklangPenstion.jpg",
                     dest: "assets",
                 },
                 {

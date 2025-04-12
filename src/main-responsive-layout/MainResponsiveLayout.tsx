@@ -16,24 +16,25 @@ import HeroSlider from './../hero-section/HeroSlider';
 import ExpandCollapse from './../expand-collapse/ExpandCollapse';
 const MainResponsiveLayout = () => {
 
-  const [leftSectionData, setLeftSectionData] = useState(LeftYojanaDetails);
-  const [rightSectionData, setRightSectionData] = useState(RightYojanaDetails);
+  // const [leftSectionData, setLeftSectionData] = useState(LeftYojanaDetails);
+  //const [rightSectionData, setRightSectionData] = useState(RightYojanaDetails);
+  // const [heroSearchTerm, setHeroSearchTerm]=useState("");
 
   return (
     <div className="application-level">
       <ComplexHeader />
       <CustomMarquee />
       <HeroSlider />
-      <div className="search-main-section">
-        <SearchData setLeftSectionData={setLeftSectionData} setRightSectionData={setRightSectionData} />
-      </div>
+      {/* <div className="search-main-section">
+        <SearchData setLeftSectionData={setLeftSectionData} setRightSectionData={setRightSectionData} heroSearchTerm={heroSearchTerm}/>
+      </div> */}
 
       <div className="main-container">
 
-        <div className="left-section">
+        {/* <div className="left-section">
           <ExpandCollapse leftright={"L"} data={leftSectionData} />
 
-        </div>
+        </div> */}
 
 
         {/* <div className="right-section">
